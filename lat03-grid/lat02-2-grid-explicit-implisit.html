@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explisit and Implisit</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #ddd;
+        }
+
+        .container {
+            width: 60%;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: 100px 50px;
+            grid-template-rows: 50px 100px 150px;
+            /* Grid Explisit hanya mengatur 2 kolom dan 3 baris, sisanya tidak diatur */
+            grid-auto-rows: 200px;
+            /* Grid Implisit mengatur sisa grid yang belum tentu muncul */
+        }
+
+        .item {
+            background-color: blueviolet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item:nth-child(even) {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+
+</body>
+
+</html>

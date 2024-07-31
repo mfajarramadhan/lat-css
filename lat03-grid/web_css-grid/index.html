@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guna Jaya Property</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header" id="home">
+            <div class="hero">
+                <h2>Guna Jaya Property</h2>
+                <p>Rumah Subsidi dan Komersil</p>
+            </div>
+            <div class="features feature-1">
+                <h4 class="price">Booking 500K + No DP</h4>
+                <p class="item">Rumah Subsidi</p>
+            </div>
+            <div class="features feature-2">
+                <h4 class="price">Boking + DP 3.5JT</h4>
+                <p class="item">Rumah Komersil</p>
+            </div>
+        </header>
+
+        <nav class="menu" id="products">
+            <div class="menu-toggle">
+                <input type="checkbox" name="" id="">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="brand">
+                <h1>Guna Jaya Property</h1>
+            </div>
+            <ul class="menu-list">
+                <l1><a href="#home">Home</a></l1>
+                <l1><a href="#service">Services</a></l1>
+                <l1><a href="#gallery">Gallery</a></l1>
+                <l1><a href="#">Contact</a></l1>
+            </ul>
+        </nav>
+
+        <section class="services" id="service">
+            <div class="service">
+                <div class="icon">🏠</div>
+                <h3>Rumah Subsidi</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sed, tempora cupiditate veniam
+                    quibusdam fugit.</p>
+            </div>
+            <div class="service">
+                <div class="icon">💒</div>
+                <h3>Rumah Komersil</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sed, tempora cupiditate veniam
+                    quibusdam fugit.</p>
+            </div>
+            <div class="service">
+                <div class="icon">💳</div>
+                <h3>BPSJ Ketenagakerjaan</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sed, tempora cupiditate veniam
+                    quibusdam fugit.</p>
+            </div>
+        </section>
+
+        <section class="galery" id="gallery">
+            <h2>Gallery</h2>
+            <img src="image/subsidi.jpg" alt="gambar rumah" width="350" height="350">
+            <img src="image/depan.jpg" alt="gambar rumah" width="350" height="350">
+            <img src="image/samping.jpg" alt="gambar rumah" width="350" height="350">
+            <img src="image/dalem1.jpg" alt="gambar rumah" width="350" height="350">
+            <img src="image/dalem2.jpg" alt="gambar rumah" width="350" height="350">
+            <img src="image/dalem3.jpg" alt="gambar rumah" width="350" height="350">
+            <img src="image/bpjs.jpg" alt="gambar rumah" width="350" height="350">
+        </section>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle input');
+        const nav = document.querySelector('nav ul');
+        // const logo = document.querySelector('nav .logo');
+
+        menuToggle.addEventListener('click', function () {
+            nav.classList.toggle('slide');
+            // logo.classList.toggle('slide2');
+        });
+    </script>
+</body>
+
+</html>

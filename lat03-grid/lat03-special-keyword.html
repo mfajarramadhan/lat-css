@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Keyword</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #ddd;
+        }
+
+        .container {
+            width: 60%;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr) repeat(6, 2fr);
+            /* repeat(banyaknya kolom, ukurannya) */
+        }
+
+        .container.dua {
+            grid-template-columns: 1fr min-content 1fr;
+            /* kolom kedua lebarnya sesuai dengan kontentnya (per kata terpanjang) */
+        }
+
+        .container.tiga {
+            grid-template-columns: 1fr max-content 1fr;
+            /* kolom kedua lebarnya sesuai dengan kontentnya (keseluruhan kata) */
+        }
+
+        .container.empat {
+            border: 4px solid black;
+            grid-template-columns: repeat(auto-fill, 100px);
+            /* untuk responsive */
+        }
+
+        .container.lima {
+            grid-template-columns: 1fr minmax(100px, 300px) 1fr;
+            /* kolom kedua lebar min dan max berbeda */
+        }
+
+        .item {
+            background-color: blueviolet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item:nth-child(even) {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <p>repeat</p>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+
+    <p>min-content</p>
+    <div class="container dua">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">Muhammad Fajar Ramadhan</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+
+    <p>max-content</p>
+    <div class="container tiga">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">Muhammad Fajar Ramadhan</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+
+    <p>auto-fit/auto-fill</p>
+    <div class="container empat">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+
+    <p>minmax</p>
+    <div class="container lima">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <!-- <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div> -->
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        /*
+        scale(angka), scaleX(angka), scaleY(angka)
+        rotate(deg), rotateX(deg), rotateY(deg)
+        skew(deg), skewX(deg), skewY(deg)
+        translate(px), translateX(px), translateY(px)
+        */
+        div {
+            margin: 100px;
+        }
+
+        .kotak1 {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: .5s;
+        }
+
+        .kotak2 {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: .5s;
+        }
+
+        .kotak3 {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: .5s;
+        }
+
+        .kotak4 {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: .5s;
+        }
+
+        .kotak5 {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: .5s;
+        }
+
+        .kotak6 {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: .5s;
+        }
+
+        .kotak7 {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: .5s;
+        }
+
+        .kotak8 {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: .5s;
+        }
+
+
+
+
+        .kotak1:hover {
+            transform: scale(2);
+            rotate: 180deg;
+        }
+
+        .kotak2:hover {
+            transform: scale(2);
+            rotate: -180deg;
+        }
+
+        .kotak3:hover {
+            transform: rotate(180deg) rotateX(180deg) rotateY(180deg);
+        }
+
+        .kotak4:hover {
+            transform: rotateX(90deg);
+        }
+
+        .kotak5:hover {
+            transform: rotateY(90deg);
+        }
+
+        .kotak6:hover {
+            transform: translate(50px, 100px);
+            /*translate-x, translate-y*/
+        }
+
+        .kotak7:hover {
+            transform: skew(45deg);
+        }
+
+        .kotak8:hover {
+            transform: scale(2, 3)
+                /*scaleX, scaleY*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="kotak1"></div>
+    <div class="kotak2"></div>
+    <div class="kotak3"></div>
+    <div class="kotak4"></div>
+    <div class="kotak5"></div>
+    <div class="kotak6"></div>
+    <div class="kotak7"></div>
+    <div class="kotak8"></div>
+
+</body>
+
+</html>

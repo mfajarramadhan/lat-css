@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .container {
+            margin: 10px auto;
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            border: 2px solid black;
+            color: white;
+            padding: 2px;
+            box-sizing: border-box;
+            display: grid;
+            grid-template-areas: "header header"
+                "aside main"
+                "nav main"
+                "footer footer";
+            grid-template-columns: 1fr 1.5fr;
+            grid-template-rows: 1fr 1fr 1.3fr;
+        }
+
+        header {
+            grid-area: header;
+            width: 100%;
+            background-color: purple;
+            height: 80px;
+            line-height: 80px;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: blue;
+            line-height: 80px;
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: red;
+            line-height: 150px;
+        }
+
+        main {
+            grid-area: main;
+            background-color: orange;
+            line-height: 230px;
+        }
+
+        footer {
+            grid-area: footer;
+            height: 82px;
+            background-color: gray;
+            float: left;
+            line-height: 82px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>HEADER</header>
+        <aside>ASIDE</aside>
+        <nav>NAV</nav>
+        <main>MAIN</main>
+        <footer>FOOTER</footer>
+    </div>
+</body>
+
+</html>

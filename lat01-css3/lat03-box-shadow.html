@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+    <style>
+        .div1 {
+            width: 300px;
+            height: 300px;
+            margin: 50px auto;
+            background-color: gold;
+            box-shadow: 10px 10px 10px 15px rgba(0, 0, 0, .75);
+            /*x-offset, y-offset, blur, spread atau ukuran
+            .75 opacity*/
+        }
+
+        .div2 {
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            background-color: gold;
+            box-shadow: -10px -10px 10px 10px rgba(0, 0, 0, .75);
+        }
+
+        .div3 {
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            background-color: gold;
+            box-shadow: 0 30px 10px -15px rgba(0, 0, 0, .75);
+        }
+
+        .div4 {
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            background-color: gold;
+            box-shadow: inset 0 0 10px 10px rgba(0, 0, 0, .75);
+            /*Inset blur kedalam*/
+        }
+
+        .div5 {
+            width: 300px;
+            height: 300px;
+            margin: 50px auto;
+            background-color: gold;
+            box-shadow: 0px 0px 10px 15px rgba(0, 0, 0, .75);
+            transition: .8s;
+        }
+
+        .div5:hover {
+            box-shadow: 30px 30px 10px 15px rgba(0, 0, 0, .75);
+        }
+
+        .div6 {
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            background-color: gold;
+            box-shadow: 0 0 0 5px black,
+                0 0 0 10px red,
+                0 0 0 15px blue,
+                0 0 0 20px brown,
+                0 0 0 25px rgb(5, 255, 5),
+                0 0 0 30px purple,
+                0 0 0 35px yellow,
+                0 0 0 40px black
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+    <div class="div5"></div>
+    <div class="div6"></div>
+</body>
+
+</html>

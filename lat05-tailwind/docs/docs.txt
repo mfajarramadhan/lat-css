@@ -1,0 +1,55 @@
+Install Tailwindcss into project:
+- npm init -y
+- npm i -D tailwindcss
+- npm i -D prettier-plugin-tailwind (untuk merapihkan class tailwind css)
+- npx tailwindcss init
+- ubah path content di file tailwind.config.js	
+- add 3 path directives tailwind 
+- compilasi file input ke output dengan cara run tailwind "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch" (nama file/folder output bebas, klik ctrl + c untuk mematikan proses compilasi)
+- tambahkan tag link di file index.html yg mengarah ke file output & hapus slashnya(/) "src/output.css"
+
+
+Tailwind important thing:
+- write this code on terminal when you start to coding again to run tailwind tracker
+- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+- it will turn off automaticly if you shutdown your laptop or close your visual code
+
+
+CSS opposite things:
+- hidden | block | flex | grid
+- absolute | static
+
+
+
+
+1. Margin/Padding
+setiap kelipatan 4 = 1rem (1rem = 16px)
+contoh: 
+- p-8 (padding-8 = 2rem/32px) 
+- m-4 (margin-4 = 1rem/16px)
+- m-2 (margin-2 = 0.5 rem/8px)
+- p-px (padding = 1px)
+- m-px (margin = 1px)
+
+x untuk sumbu x (horizontal)
+y untuk sumbu y (vertikal)
+contoh:
+- py-4 (padding sumbu y atas Bawah sebesar 1rem/16px)
+- px-4 (padding sumbu x kanan kiri sebesar 1rem/16px)
+
+2. Color
+- bg-gradient-to-r from-blue-400 to-teal-500 bg-clip-text text-transparent
+
+ket:
+- bg-clip-text berfungsi untuk membungkus color kedalam text dan warna bukan menjadi background
+- text harus bersifat transparent agar warna bisa masuk ke text
+- tambahkan via untuk gradient 3 warna, contoh :
+- bg-gradient-to-r from-indigo-200 via-red-400 to-yellow-300
+
+
+3. Simple Icon
+- buka web simpleicon.org
+- hover ke arah logo kemudian salin (bentuk svg) lalu paste
+- tambahkan class="fill-current" dan width="" di dalam tag svg
+- tempatkan icon di dalam tag a, kemudian tambahkan warna di class. Contoh: class="text-white"
+- warna default icon akan mengikuti induknya yaitu tag a

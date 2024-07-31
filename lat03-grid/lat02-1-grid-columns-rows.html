@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Columns and Rows</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #ddd;
+        }
+
+        .container {
+            width: 60%;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: 100px 25% 200px;
+            /* Ukuran kolom (ada 3 kolom) */
+            grid-template-rows: 100px;
+            /* Ukuran baris (ada 3 baris, hanya baris pertama yang diatur tingginya) */
+
+        }
+
+        .item {
+            background-color: blueviolet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item:nth-child(even) {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+
+</body>
+
+</html>
