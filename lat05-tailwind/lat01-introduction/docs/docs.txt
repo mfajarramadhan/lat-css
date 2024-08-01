@@ -1,0 +1,17 @@
+Instalasi tailwind:
+npm i -D postcss autoprefixer tailwindcss
+npx tailwindcss init
+npx tailwindcss -i ./src/css/input.css -o ./public/css/style.css --watch
+
+untuk memperkecil size file css:
+npx tailwindcss ./public/css/final.css --minify
+hal ini akan membuat file baru benama final.css dengan ukuran lebih kecil dan ubah link href index.html ke final.css
+
+
+Shortcut :
+ctrl + spasi untuk membuka list rekomendasi syntax
+ctrl + c untuk mematikan  fitur real time tailwind di terminal
+
+Cara membersihkan code real time di style.css :
+buka tailwind.config.js lalu save (ctrl + save)
+

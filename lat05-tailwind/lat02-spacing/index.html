@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // customize spacing kita sendiri yang tidak disediakan tailwind
+        // contoh margin
+        tailwind.config = {
+            theme: {
+                extend: {
+                    spacing: {
+                        13: '3.25rem'
+                    },
+                    // custom font sendiri dari google font
+                    // fontFamily: {
+                    //     inter: ['Inter'],
+                    // },
+                },
+            },
+        }
+    </script>
+    <title>Spacing</title>
+    <style type="text/tailwindcss">
+        /* untuk customize style sendiri di tailwind 
+        *{
+            border: 1px solid red;
+        } */
+    </style>
+
+</head>
+
+<body>
+    <h1 class="text-4xl text-center font-bold my-10">Belajar <span
+            class="bg-gradient-to-r from-blue-400 to-teal-500 bg-clip-text text-transparent">Tailwind CSS</span></h1>
+    <section class="mb-10 bg-gradient-to-r from-indigo-200 via-red-400 to-yellow-300">
+        <h2 class="text-center">Spacing</h2>
+        <div class="m-13">Margin</div>
+        <div class="p-8">Padding</div>
+    </section>
+
+    <section class="mb-10 bg-green-200">
+        <h2 class="text-center">Sizing</h2>
+        <div class="w-32 h-32">Kotak 1</div>
+        <div class="max-w-xs min-h-screen">Kotak 2</div>
+    </section>
+
+
+    <section class="mb-96 max-w-3xl mx-auto">
+        <h2 class="mb-4 text-4xl font-bold">Typography</h2>
+        <div class="mb-2 text-lg text-gray-500">By Muhammad Fajar, 27 May 2024</div>
+
+        <p class="mb-4">Lorem ipsum dolor sit amet <a href="#"
+                class="underline font-semibold text-blue-600">consectetur</a>
+            adipisicing elit. Nisi laborum laudantium, at cum
+            suscipit voluptas
+            voluptates sint eos, amet molestiae assumenda, iste sed accusantium quibusdam illo fugit? Fugit non
+            similique id veritatis, quisquam, sequi magni aperiam blanditiis recusandae, molestias debitis dicta in
+            laudantium adipisci esse maiores quia ratione ea. A.</p>
+        <blockquote class="mb-4 italic font-thin text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            "Aliquid pariatur perferendis sequi
+            voluptatum
+            facilis earum ex eos architecto atque asperiores?"</blockquote>
+        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laudantium porro soluta,
+            itaque culpa
+            laboriosam minus temporibus totam dolore alias, debitis rem quibusdam cupiditate quaerat nobis saepe
+            veritatis nesciunt iste? </p>
+    </section>
+</body>
+
+</html>
